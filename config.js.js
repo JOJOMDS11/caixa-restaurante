@@ -3,7 +3,7 @@
 //    (Project Settings > API, no painel do Supabase)
 // 3. O config.js está no .gitignore e nunca será enviado ao GitHub
 
-const SUPABASE_URL = "https://SEU-PROJETO.supabase.co";
-const SUPABASE_ANON_KEY = "SUA_CHAVE_ANON_AQUI";
+const SUPABASE_URL = "sb_publishable_WBtHI_Gy-gzbSEE5v_mXqw_gTC2Vn8p";
+const SUPABASE_ANON_KEY = "https://ufyvevjtrsyxbcflodpe.supabase.co";
 
 const db = supabase.createClient(SUPABASE_URL, SUPABASE_ANON_KEY);
