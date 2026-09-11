@@ -1,0 +1,10 @@
+# Credenciais do Supabase — nunca subir para o GitHub
+config.js
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Editores
+.vscode/
+.idea/
