@@ -17,11 +17,6 @@ jobs:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
 
-    permissions:
-      contents: read
-      pages: write
-      id-token: write
-
     steps:
       - uses: actions/checkout@v4
 
@@ -31,7 +26,7 @@ jobs:
           const SUPABASE_URL = '${{ secrets.SUPABASE_URL }}';
           const SUPABASE_ANON_KEY = '${{ secrets.SUPABASE_ANON_KEY }}';
 
-          const supabaseClient = supabase.createClient(
+          window.db = supabase.createClient(
             SUPABASE_URL,
             SUPABASE_ANON_KEY
           );
